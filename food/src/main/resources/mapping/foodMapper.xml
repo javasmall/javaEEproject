@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.food.dao.foodMapper">
+    <insert id="insertPath" parameterType="com.food.bean.path">
+        insert into path(sapid,path,name,time ,type )values (#{sapid},#{path},#{name },#{time },#{type})
+    </insert>
+    <insert id="insertUser" parameterType="com.food.bean.users">
+        insert into users (sapid,password,detail) values (#{sapid},#{password},#{detail});
+    </insert>
+    <delete id="deletepath">
+        delete from path where sapid=#{sapid} and name=#{name}
+    </delete>
+    <update id="updateuser">
+        update users set sapid=#{sapid},password=#{password},detail=#{detail}
+        where sapid=#{sapid}
+    </update>
+    <select id="getallpath" resultType="Map">
+        select * from path
+        order by time desc
+    </select>
+    <select id="getpathbyid" resultType="Map">
+        select * from path
+        where sapid=#{id}
+        order by time desc
+    </select>
+    <select id="getuserbyid" resultType="Map">
+        select * from users
+        where sapid=#{id}
+    </select>
+    <select id="getalluser" resultType="Map">
+        select * from users
+    </select>
+    <select id="getadmin" resultType="Map">
+        select * from admin where username=#{username}
+    </select>
+</mapper>

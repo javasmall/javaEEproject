@@ -1,0 +1,254 @@
+@CHARSET "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", "微软雅黑", "consolas";
+    /*background-image: url("../images/1.jpg");*/
+    /*background: url("../images/2.jpg");*/
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+    /*background-attachment: fixed;*/
+}
+
+/*背景图片*/
+.screenbg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -999;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.screenbg ul li {
+    display: block;
+    list-style: none;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    float: right;
+}
+
+.screenbg ul a {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+}
+
+.screenbg a img {
+    vertical-align: middle;
+    display: inline;
+    border: none;
+    display: block;
+    list-style: none;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1000;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar {
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar .navbar-content-1 a {
+    float: left;
+    color: #FFF;
+    line-height: 50px;
+    display: inline-block;
+    width: 90px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.navbar .navbar-content-2 a {
+    float: right;
+    color: #FFF;
+    line-height: 50px;
+    display: inline-block;
+    width: auto;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.navbar .navbar-content a {
+    float: left;
+    color: #FFF;
+    line-height: 50px;
+    display: inline-block;
+    width: 90px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.navbar .navbar-content a:hover {
+    color: #CCC;
+}
+
+.index-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -50px;
+    z-index: -10;
+}
+
+.news-des img {
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin: -200px 0px 50px 200px;
+}
+
+.news-list {
+    margin: 50px 0;
+    background-color: #FFF;
+    border-radius: 15px;
+    border: 1px solid #DDD;
+    padding: 30px 20px;
+    min-height: 300px;
+}
+
+.news-list:hover {
+    box-shadow: 0 0 5px 3px #CCC;
+}
+
+.about .about-des {
+    border-left: 5px solid #abc;
+    margin-top: 15px;
+}
+
+.about .about-des p {
+    padding-left: 10px;
+    line-height: 28px;
+    text-indent: 2em;
+}
+
+.news-list-left {
+    float: left;
+    width: 679px;
+    margin-bottom: 50px;
+}
+
+.news-list-right {
+    float: right;
+    width: 279px;
+}
+
+.news-list-item {
+    padding: 20px 30px;
+}
+
+.author-time {
+    font-size: 14px;
+}
+
+.news-des {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.news-title {
+    font-size: 15px;
+    width: 450px;
+    white-space: pre-wrap;
+}
+
+.news-title i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: url('../images/54a1137bbeaa9.jpg') left center no-repeat;
+    vertical-align: middle;
+}
+
+.news-title a {
+    color: green;
+}
+
+.news-title a:hover {
+    text-decoration: underline;
+}
+
+.news-content-des {
+    line-height: 28px;
+}
+
+.news-list-left1 {
+    float: left;
+    width: 400px;
+    margin-top: 50px;
+}
+
+.news-list-right1 {
+    float: right;
+    width: 229px;
+    margin-top: 50px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 9px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+    color: gray;
+    border-top: 2px solid #CCC;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.select {
+    position: relative;
+    width: 134px;
+    min-width: 134px;
+    height: 36px;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+        
+
